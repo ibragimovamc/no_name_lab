@@ -1,0 +1,909 @@
+@font-face {
+    font-family: "bebas";
+    src: url("/Library/Fonts/BebasNeue Regular.ttf");
+}
+@font-face {
+    font-family: "open-sans";
+    src: url("/Library/Fonts/OpenSans-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.newA{
+    text-decoration: none;
+    color:black;
+}
+.menuA{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background:black;
+}
+.intro{
+    background-image: url("/Users/ivan/Desktop/егор учеба/vscode/laba7/bg image 1.svg");
+    background-size: cover;
+    height: 960px;
+    display: grid;
+    grid-template-rows: 30% 70% ;
+}
+.hat{
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1.5%;
+    grid-template-columns: 16fr 53fr 30fr; 
+    height: 60px;
+}
+.menu{
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    color:white;
+    font-family: "open-sans";
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.anchor{
+    width:max-content;
+}
+.logosAndMenus{
+    padding-left: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logosAndMenus > li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    position: relative;
+    list-style-type: none;
+}
+.logosAndMenus >li> a{
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    font-family: "open-sans";
+    font-weight: bold;
+    text-decoration: none;
+}
+.logosAndMenus > li >  ul {
+    display: none;
+    letter-spacing: 0.1em;
+    position: absolute;
+    left: -8px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "open-sans";
+    text-decoration: none;
+    list-style-type: none;
+    background: black;
+    color:white;
+    border-radius: 5px 5px 5px 5px;
+    width: 47px;
+    height: 60px;
+    padding-top: 5px;
+    padding-left: 8px;
+    margin-top: 6px;
+}
+
+.logosAndMenus > li:hover > ul{
+    display: block;
+}
+
+.logosAndMenus > li > ul > li:hover{
+    color: #FFB548;
+
+}
+.slog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+H1{
+    font-family: "bebas";
+    color:white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 80px;
+    font-size: 80px;
+}
+.newH{
+    font-family: "bebas";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color:white;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.seller{
+    font-family: "open-sans";
+    font-size:16px;
+    font-weight: bold;
+    display: flex;
+    color:#1A1917;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    width:250px;
+    height: 60px;
+    border-radius: 4px;
+}
+.story{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "open-sans";
+    margin-top: 367px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+.storyButton{
+    margin-top: 8px;
+    background: none; 
+    border:none;
+}
+.storyButton:active{
+    transform: scale(0.8);
+}
+.what{
+    background-image: url("/Users/ivan/Desktop/егор учеба/vscode/laba7/второй бек.svg");
+    background-size: cover;
+    height: 1052px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.2fr 0.1fr;
+    grid-auto-rows: 818px;
+    
+}
+.expect{
+    position: relative;
+    display: grid;
+    text-transform: uppercase;
+    color:white;
+    font-size: 24px;
+    font-family: "bebas";
+    margin-top:40%;
+    margin-left: 17%;
+    letter-spacing: 2px;
+    margin-top: 255px;
+    grid-template-rows: 1fr 4.25fr 5.3fr ;
+}
+.mustn  {
+    width: max-content;
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+.expect > img{
+    z-index: 10;
+    position: absolute;
+    top:215px;
+}
+.slider{
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 210px;
+}
+
+.about {
+    text-align: justify;
+    text-transform: none;
+    font-style: normal;
+    width:65%;
+    padding-left: 30%;
+    padding-right: 5%;
+    color:white;
+    font-family: "open-sans";
+    font-size: 18px;
+    letter-spacing: normal;
+}
+.hide{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slide{
+    border-radius: 5px;
+    margin-right: 8.8%;
+    object-fit: cover;
+    width: 96%;
+    height: 100%;
+}
+
+.bar{
+    cursor: pointer;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border-radius: 10px;
+    border: 1.30637px solid #FFFFFF;
+}
+
+.navigation{
+    position: absolute;
+    display: flex;
+    width: 39%;
+    left:53.7%;
+    justify-content: space-evenly;
+    margin-bottom: 45px;
+}
+
+.switch{
+    cursor: pointer;
+    margin-top: 502px;
+    position: absolute;
+    visibility: hidden;
+}
+
+#r1:checked ~ .slider > .s1{
+    transition: 2s;
+    transform: translate(0);
+}
+#r1:checked ~ .slider > .s2{
+    transition: 2s;
+    transform: translate(0);
+}
+#r1:checked ~ .slider > .s3{
+    transition: 2s;
+    transform: translate(0);
+}
+#r1:checked ~ .slider > .s4{
+    transition: 2s;
+    transform: translate(0);
+}
+#r1:checked ~ .slider > .s5{
+    transition: 2s;
+    transform: translate(0);
+}
+
+#r2:checked ~ .slider > .s1{
+    transition: 2s;
+    transform: translate(-100%);
+}
+#r2:checked ~ .slider > .s2{
+    transition: 2s;
+    transform: translate(-108.8%);
+}
+#r2:checked ~ .slider > .s3{
+    transition: 2s;
+    transform: translate(-100%);
+}
+#r2:checked ~ .slider > .s4{
+    transition: 2s;
+    transform: translate(-100%);
+}
+#r2:checked ~ .slider > .s5{
+    transition: 2s;
+    transform: translate(-100%);
+}
+
+#r3:checked ~ .slider > .s1{
+    transition: 2s;
+    transform: translate(-200%);
+}
+#r3:checked ~ .slider > .s2{
+    transition: 2s;
+    transform: translate(-216.5%);
+}
+#r3:checked ~ .slider > .s3{
+    transition: 2s;
+    transform: translate(-205.8%);
+}
+#r3:checked ~ .slider > .s4{
+    transition: 2s;
+    transform: translate(-198.5%);
+}
+#r3:checked ~ .slider > .s5{
+    transition: 2s;
+    transform: translate(-198.5%);
+}
+#r4:checked ~ .slider > .s1{
+    transition: 2s;
+    transform: translate(-300%);
+}
+#r4:checked ~ .slider > .s2{
+    transition: 2s;
+    transform: translate(-316.5%);
+}
+#r4:checked ~ .slider > .s3{
+    transition: 2s;
+    transform: translate(-305.8%);
+}
+#r4:checked ~ .slider > .s4{
+    transition: 2s;
+    transform: translate(-311.6%);
+}
+#r4:checked ~ .slider > .s5{
+    transition: 2s;
+    transform: translate(-298.6%);
+}
+#r5:checked ~ .slider > .s1{
+    transition: 2s;
+    transform: translate(-400%);
+}
+#r5:checked ~ .slider > .s2{
+    transition: 2s;
+    transform: translate(-416.5%);
+}
+#r5:checked ~ .slider > .s3{
+    transition: 2s;
+    transform: translate(-405.8%);
+}
+#r5:checked ~ .slider > .s4{
+    transition: 2s;
+    transform: translate(-411.6%);
+}
+#r5:checked ~ .slider > .s5{
+    transition: 2s;
+    transform: translate(-420.6%);
+}
+
+#r1:checked ~ .slider > .navigation > .b1{
+    transition: 1s;
+    background: white;
+}
+#r2:checked ~ .slider > .navigation > .b2{
+    transition: 1s;
+    background: white;
+}
+#r3:checked ~ .slider > .navigation > .b3{
+    transition: 1s;
+    background: white;
+}
+#r4:checked ~ .slider > .navigation > .b4{
+    transition: 1s;
+    background: white;
+}
+#r5:checked ~ .slider > .navigation > .b5{
+    transition: 1s;
+    background: white;
+}
+
+
+#r1:checked ~ .kekw > label.sw2 > .switch{
+    visibility: visible;
+}
+#r2:checked ~ .kekw > label.sw3 > .switch{
+    visibility: visible;
+}
+#r3:checked ~ .kekw > label.sw4 > .switch{
+    visibility: visible;
+}
+#r4:checked ~ .kekw > label.sw5 > .switch{
+    visibility: visible;
+}
+#r5:checked ~ .kekw > label.sw1 > .switch{
+    visibility: visible;
+}
+
+
+.special{
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 348fr 522fr;
+    height: 870px;
+    background-image:radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("/Users/ivan/Desktop/егор учеба/vscode/laba7/bg image 3.svg");
+    padding-left: 56%;
+}
+.special > div > h2 {
+    font-weight: bold;
+    margin-top: 170px;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    font-family: "bebas";
+}
+.special > div > h3 {
+    margin-top: 9px;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: "bebas";
+}
+.choseInfo{
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    margin-bottom: 36px;
+}
+.info > h4{
+    padding-top: 7px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 2px;
+    color: #FFB548;
+    font-family: "bebas";
+}
+.dopInfo{
+    padding-left: 9%;
+    padding-top: 5.3px;
+    padding-bottom: 32.65px;
+    position: absolute;
+    visibility: hidden;
+    width:63%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;   
+    color: #FFFFFF;
+    font-family: "open-sans";
+}
+#c1:checked ~ .choseInfo > .di1{
+    position: relative;
+    visibility: visible;
+}
+#c1:checked ~ .choseInfo > .i1{
+    margin-bottom: 0;
+}
+#c1:checked ~ .choseInfo >  .i1 > label{
+    background: white;
+}
+#c2:checked ~ .choseInfo > .di2{
+    position: relative;
+    visibility: visible;
+}
+#c2:checked ~ .choseInfo > .i2{
+    margin-bottom: 0;
+}
+#c2:checked ~ .choseInfo >  .i2 > label{
+    background: white;
+}
+#c3:checked ~ .choseInfo > .di3{
+    position: relative;
+    visibility: visible;
+}
+#c3:checked ~ .choseInfo > .i3{
+    margin-bottom: 0;
+}
+#c3:checked ~ .choseInfo >  .i3 > label{
+    background: white;
+}
+
+
+.rec{
+    height:960px;
+    background:radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%) , url("/Users/ivan/Desktop/егор учеба/vscode/laba7/bg image 4.svg");
+    display: grid;
+    grid-template-rows: 194fr 285fr;
+}
+.canRun{
+    text-align: center;
+    margin-top: 145px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    font-family: "bebas";
+}
+.canRun > h5{
+    margin-top: 9px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.stats{
+    width: 45%;
+    display: grid;
+    grid-template-rows: 2fr 1.192fr;
+    padding-left: 8%;
+    padding-bottom: 170px;
+}
+.table{
+    position: absolute;
+}
+.litStats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.partOfStats{
+    border-bottom: 1px solid #979797;
+    padding-top: 15px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.partOfStats:nth-child(2n+1){
+    border-right: 1px solid #979797; ;
+}
+.graphic{
+    padding-top: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.nameStat{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFB548;
+    font-family: "bebas";
+}
+.whatNeed{
+    margin-top: 7px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+    font-family: "open-sans";
+}
+.reviews{
+    background:radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%) , url("/Users/ivan/Desktop/егор учеба/vscode/laba7/bg image 5.svg") ;
+    height: 960px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.thinkin{
+    padding-top:303px;
+    padding-left: 17%;
+}
+.thinkin > h5{
+    font-family: "bebas";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+.thinkin > h6{
+    margin-top: 9px;
+    font-family: "bebas";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.goals{
+    font-family: "open-sans";
+    margin-top: 37px;
+    width: 75%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.call{
+    font-family: "open-sans";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1917;
+    text-align: center;
+    margin-top: 40px;
+    width:50%;
+    height: 60px;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 4px;
+    border:none;
+}
+.cardPlace{
+    padding-right: 17%;
+    display: grid;
+    padding-top: 160px;
+    padding-bottom: 147px;
+    grid-template-rows: 212px 235px 235px;
+}
+.card{
+    height: 173px;
+    padding-top: 11px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    display: grid;
+    padding-left: 12px;
+    padding-bottom: 21px;
+    padding-right: 20px;
+    grid-template-rows: 108fr 70fr 25fr;
+}
+.card:nth-child(1){
+    grid-template-rows: 110fr 50fr 21fr;
+    height: 150px;
+    margin-left: 15%;
+}
+.card:nth-child(2){
+    margin-right: 15%;
+}
+.card:nth-child(3){
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.logoPlace{
+    height: 65px;
+    display: grid;
+    grid-template-columns:65fr 260fr 18fr ;
+}
+.logo{
+    background: #FFB548;
+    border-radius: 35px;
+}
+.name{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 20px;
+    font-family: "bebas";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFB548;
+}
+.who{
+    font-family: "open-sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.text{
+    font-family: "open-sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.date{
+    font-family: "open-sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.touch{
+    background: #080A0B;
+    height: 743px;
+    display: grid;
+    grid-template-columns: 675fr 773fr ;
+    padding-right: 5%;
+}
+.gradim{
+    margin-top: 72px;
+    margin-left: 21%;
+    height: 655px;
+    background-image:radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%) , url("/Users/ivan/Desktop/егор учеба/vscode/laba7/skull.svg");
+
+}
+.subs{
+    display: block;
+}
+.subs > h5 {
+    font-family: "bebas";
+    margin-top: 220px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;  
+    color: white;  
+}
+.subs > h6 {
+    margin-top: 9px;
+    font-family: "bebas";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.subsAnno{
+    margin-top: 45px;
+    font-family: "open-sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+}
+.subToLetter{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.getEmail{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    padding-left: 20px;
+    width: 54%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 5px;
+}
+.getEmail > h5{
+    
+    position: relative;
+    top:10px;
+    margin-top: 6px;
+    font-family: "open-sans";
+    font-style: normal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFB548;
+    border-radius: 4px;
+}
+.getEmail > input{
+    border:none;
+    font-family: "open-sans";
+    background: none;
+    width: 90%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFB548;
+
+}
+.getEmail > input:focus ~ h5{
+    transition: 0.3s;
+    font-family: "open-sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-radius: 4px;
+    top:0;
+    visibility: visible;
+    display: block;
+}
+.subNow{
+    border:none;
+    width: 260px;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.downMenu{
+    height: 120px;
+    background: #080A0B;
+    display: grid;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 200fr 570fr 270fr ;
+}
+.downButs{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    font-family: "open-sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.downLogos{
+    margin-left: 25%;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 55px;
+    padding-bottom: 45px;
+}
+footer{
+    height: 95px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.copyrights{
+    display: flex;
+    justify-content: space-between;
+}
+.outGame{
+    margin-top: 22px;
+    font-family: "open-sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.policy{
+    margin-top: 24px;
+    font-family: "open-sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.faceBook{
+    text-align: center;
+    width: 20px;
+    
+}
+.faceBook:hover{
+    padding-top:3px;
+    border-radius: 5px;
+    background: rgb(92, 92, 228);
+}
+.twitDonw{
+    text-align: center;
+    width: 25px;
+}
+.twitDonw:hover{
+    padding-top: 5px;
+    border-radius: 5px;
+    background: rgb(47, 217, 247);
+}
+.youTubeDown{
+    text-align: center;
+    width: 30px;
+}
+.youTubeDown:hover{
+    background: white;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+.twitchDown{
+    width: 25px;
+    text-align: center;
+}
+.twitchDown:hover{
+    border-radius: 5px;
+    background: rgb(140, 0, 255);
+    padding-top: 5px;
+}
+input{
+    outline: none;
+}
