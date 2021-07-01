@@ -1,0 +1,958 @@
+body, ul, li, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font: 16px 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Header styles start */
+/** Header main styles **/
+header {
+    height: 100vh;
+    background: url("../img/header-bg.jpg") bottom / cover;
+}
+
+.header-elements {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/** Header nav panel settings start **/
+.header-elements nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/*** Header nav panel logo styles ***/
+.header-elements .header-logo img {
+    width: 55px;
+    height: 55px;
+}
+
+/*** Header nav panel menu styles start ***/
+.header-elements nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-elements nav ul li {
+    padding-right: 60px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header-elements nav ul li:last-child {
+    padding-right: 0;
+}
+/*** Header nav panel menu styles end ***/
+
+/*** Header nav panel settings styles start ***/
+.header-elements nav .header-settings {
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.header-elements nav .header-settings .header-len {
+    margin-right: 5px;
+}
+
+.header-elements nav .header-settings img {
+    margin-right: 30px;
+}
+
+.header-elements nav .header-settings a:nth-child(3) {
+    padding-left: 30px;
+    border-left: 1px solid #fff;
+}
+
+.header-elements nav .header-settings a:last-child {
+    margin-right: 0;
+}
+/*** Header nav panel settings styles end ***/
+/** Header nav panel settings end **/
+
+/** Header center block styles start **/
+.header-elements .header-center-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-elements .header-center-block h2 {
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.header-elements .header-center-block h3 {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/*** Header center button styles start **/
+.header-elements .header-center-block .header-buy-button {
+    margin-top: 25px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 4px;
+    color: #000;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+}
+
+.header-elements .header-center-block .header-buy-button  .header-buy-button-text {  
+    padding-right: 5px;
+}
+.header-elements .header-center-block .header-buy-button  .header-buy-button-price { 
+    padding-left: 15px;
+    border-left: 1px solid #1A1917
+} 
+/*** Header center button styles end **/
+/** Header center block styles end **/
+
+/** Header bottom slider styles start **/
+.header-elements .header-bottom-button {
+    margin-bottom: 50px;
+}
+
+.header-elements .header-bottom-button .header-bottom-button-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+.header-elements .header-bottom-button .header-bottom-button-slider span {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-elements .header-bottom-button .header-bottom-button-slider img {
+    width: 20px;
+    height: auto;
+}
+/** Header bottom slider styles end **/
+/* Header styles end */
+
+
+
+/* About styles start */
+.about {
+    position: relative;
+    height: 100vh;
+    background: url("../img/about-bg.jpg") center / cover;
+}
+
+.about-elements {
+    height: 100vh;
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "text slider";
+    padding-top: 150px;
+    justify-content: space-between;
+}
+
+.about-text h2 {
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.about-text h3 {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.about-text-title {
+    max-width: 450px;
+    padding-top: 100px;
+    position: relative;
+}
+
+.about-text-p {
+    display: flex;
+    max-width: 360px;
+    float: right;
+}
+
+.about-line {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 4px solid #fff;
+    width: 700px;
+    z-index: 5;
+}
+
+/* About styles end */
+
+
+
+/* Features styles start */
+.features {
+    position: relative;
+    height: 100vh;
+    background: url("../img/features-bg.png") top / cover;
+}
+
+.features:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%);
+  z-index: 2;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "left features-elements"
+}
+
+.features-elements {
+    margin-top: 150px;
+    margin-left: 75px;
+    grid-area: features-elements;
+    position: relative;
+    z-index: 3;
+}
+
+.features-elements h2 {
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.features-elements h3 {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.features-text {
+    padding-top: 70px;
+    display: flex;
+    max-width: 500px;
+}
+
+.features-text-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-text-bar .top-ellipse {
+    padding-top: 10px;
+}
+
+.features-text-bar .progress-bar {
+    height: 140px;
+    width: 1px;
+}
+
+.features-text-bar .solo-ellipse {
+    padding-top: 60px;
+}
+
+.features-text-blocks {
+    padding-left: 40px;
+}
+
+.features-text-blocks-title {
+    color: #FFB548;
+    font: 36px 'Bebas Neue'; 
+    display: block;
+    letter-spacing: 2px;
+    padding-bottom: 5px
+}
+
+.features-text-blocks-title:last-child {
+    padding-top: 25px;
+}
+
+
+.features-text-blocks-text {
+    padding-bottom: 40px;
+    display: inline-block;
+}
+/* Features styles end */
+
+
+
+/* Requirements styles start */
+.requirements {
+    position: relative;
+    height: 100vh;
+    background: url("../img/requirements-bg.png") center / cover;
+}
+
+.requirements:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(33.26% 45% at 64.32% 47.1%, rgba(255, 255, 255, 0) 3.36%, rgba(0, 0, 0, 0) 19.22%, #080A0B 99.74%);
+    z-index: 2;
+}
+
+.requirements-elements {
+    position: relative;
+    z-index: 3;
+    height: 100vh;
+}
+
+.requirements-elements .requirements-text {
+    padding: 130px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.requirements-elements .requirements-text h2 {
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.requirements-elements .requirements-text h3 {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/** Requirements table styles start **/
+.requirements-table {
+    background: url("../img/border-vector.png") center / cover;
+    width: 575px;
+    height: 403px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "os       processor"
+        "memory   storage"
+        "graphics graphics";
+}
+
+.requirements-elements .requirements-table > div { 
+    padding: 15px;
+}
+
+.requirements-elements .requirements-table .os,
+.requirements-elements .requirements-table .memory {
+    border-right: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+}
+
+
+.requirements-elements .requirements-table .processor,
+.requirements-elements .requirements-table .storage {
+    border-bottom: 1px solid #979797;
+}
+
+.requirements-elements .requirements-table .graphics {
+    grid-area: graphics;
+}
+
+.requirements-elements .requirements-table .requirements-table-title {
+    font: 24px 'Bebas Neue'; 
+    color: #FFB548;
+    display: block;
+    padding-bottom: 5px;
+}
+/** Requirements table styles end **/
+/* Requirements styles end */
+
+
+
+/* Quotes styles start */
+.quotes {
+    position: relative;
+    height: 100vh;
+    background: url("../img/requirements-bg.png") center / cover;
+}
+
+.quotes:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%);
+    z-index: 2;
+}
+
+.quotes-elements {
+    display: flex;
+    position: relative;
+    z-index: 3;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quotes-text {
+    max-width: 450px;
+}
+
+.quotes-text h2 {
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.quotes-text h3 {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.quotes-text-button {
+    display: inline-block;
+    margin-top: 50px;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 4px;
+    color: #000;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+}
+
+.quotes-blocks {
+    display: flex;
+    flex-direction: column;
+}
+
+.quotes-block {
+    width: 400px;
+    min-height: 120px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.quotes-right-block {
+    background: #1a1b1c;
+}
+
+.quotes-left-block {
+    position: relative;
+    min-height: 180px;
+}
+
+.quotes-left-block-absolute {
+    background: #1a1b1c;
+    position: absolute;
+    top: 0;
+    left: -140px;
+}
+
+.comment-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 15px;
+}
+
+.comment-title .twitter-img {
+    padding: 10px 5px 0 0;
+}
+
+.comment-title-person img {
+    border-radius: 50px;
+    height: 65px;
+    width: 65px;
+
+}
+
+.comment-title-person {
+    display: flex;
+}
+
+.comment-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0 25px;
+}
+
+.comment-name {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #FFB548;
+}
+
+.comment-name-desc {
+    color: grey;
+}
+
+.comment-desc {
+    display: block;
+    padding: 10px 0;
+    color: grey;
+    font-size: 12px;
+}
+/* Quotes styles end */
+
+
+
+/* Footer styles start */
+footer {
+    background: #080A0B;
+    height: 100vh;
+}
+
+.footer-elements {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+.footer-elements .footer-info {
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    padding: 20px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-desc {
+    font-size: 14px;
+    color: grey;
+}
+
+.footer-policy {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-elements nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.footer-elements nav ul {
+    list-style: none;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.footer-elements nav ul li {
+    font-weight: bold;
+    font-size: 12px;
+    padding-right: 40px;
+}
+
+.footer-elements nav ul li:last-child {
+    padding-right: 0;
+}
+
+.footer-logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin-left: 50px;
+    padding-bottom: 10px;
+}
+
+.footer-links a:first-child { 
+    margin-left: 0;
+}
+
+.footer-youtube-wrapper {
+    position: relative;
+}
+
+.footer-cursor {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.footer-sub {
+    display: flex;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.footer-text h2 {
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.footer-text h3 {
+    font: 24px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.footer-sub .skull-img {
+    margin: 30px;
+    width: 413px;
+    height: 656px;
+    content: '';
+    background: url(../img/footer-skull.png) center / cover;
+    padding-left: 40px;
+    position: relative;
+
+}
+
+
+.footer-input {
+    background-color: #1c1e1f;
+}
+
+.footer-button-label {
+    position: relative;
+}
+
+.form-input-desc {
+    font-size: 14px;
+    color: grey;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    width: 150px;
+}
+
+.form-input-desc:hover {
+    cursor: text;
+}
+
+.form-input {
+    background-color: #1c1e1f;
+    border: none;
+    padding: 30px 110px 10px 20px;
+    color: #ffb528;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 60px;
+    width: 420px;
+}
+
+.footer-text form {
+    padding-top: 50px;
+}
+
+.footer-text-button {
+    margin-top: 2px;
+    height: 60px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 20px 60px;
+    border-radius: 4px;
+    color: #000;
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+}
+
+.footer-inputs {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skull-img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
+    z-index: 4;
+}
+/* Footer styles end */
+
+/* Start tooltip styles */
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip:before,
+.tooltip:after {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    margin-bottom: 15px;
+    transition: opacity .3s;
+    left: 50%;
+}
+
+.tooltip:before {
+    border-radius: 3px;
+    content: attr(data-title);
+    width: 60px;
+    height: auto;
+    background-color: rgba(0, 0, 0, .9);
+    bottom: -100px;
+    margin-left: -65px;
+    padding: 5px 10px 5px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.05rem;
+    color: #fff;
+}
+
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip:focus:before,
+.tooltip:focus:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* End tooltip styles */
+
+
+
+
+/*! Flickity v2.2.2
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color: #333;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 650px;
+  background: url(../img/screenshot1.jpg) center / cover;
+  border-radius: 5px;
+}
+
+.cell-1 {
+    background: url(../img/screenshot1.jpg) center / cover;
+}
+
+.cell-2 {
+    background: url(../img/screenshot2.jpg) center / cover;
+}
+
+.cell-3 {
+    background: url(../img/screenshot3.jpg) center / cover;
+}
+
+.slider {
+    padding-left: 30px;
+}
+
+
+
+
+.form-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+    color: #aaa;
+    position: absolute;
+    left: 10px;
+    top: 43px;
+    transition: top 0.5s;
+}
+input:focus+label,
+input:not(:placeholder-shown)+label,
+textarea:focus+label,
+textarea:not(:placeholder-shown)+label {
+  top: 10px;
+}
